@@ -14,7 +14,8 @@
     ],
     "require": {
         "php": ">=5.5",
-        "ext-json": "*"
+        "ext-json": "*",
+        "mileschou/toggle-simplify": "^1.1"
     },
     "require-dev": {
         "php-coveralls/php-coveralls": "^2.1",
@@ -23,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MilesChou\\Toggle\\Processors\\": "src"
+            "MilesChou\\Toggle\\": "src"
         }
     },
     "autoload-dev": {

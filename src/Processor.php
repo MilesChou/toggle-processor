@@ -1,10 +1,10 @@
 <?php
 
-namespace MilesChou\Toggle\Processors;
+namespace MilesChou\Toggle;
 
-use InvalidArgumentException;
+use MilesChou\Toggle\Simplify\ProcessorInterface;
 
-abstract class Processor
+abstract class Processor implements ProcessorInterface
 {
     /**
      * @param array $context
@@ -14,36 +14,6 @@ abstract class Processor
     {
         return $this->handle($context);
     }
-
-    /**
-     * @param array $config
-     * @return static
-     */
-    public static function retrieve(array $config)
-    {
-        if (!isset($config['class'])) {
-            throw new InvalidArgumentException("Retrieve process must have 'class' key");
-        }
-
-        $class = $config['class'];
-        unset($config['class']);
-
-        /** @var static $instance */
-        $instance = new $class();
-        $instance->setConfig($config);
-
-        return $instance;
-    }
-
-    /**
-     * @param mixed $config
-     */
-    abstract public function setConfig($config);
-
-    /**
-     * @return array
-     */
-    abstract public function toArray();
 
     /**
      * @param array $context

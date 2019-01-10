@@ -3,6 +3,7 @@
 namespace MilesChou\Toggle\Processors;
 
 use InvalidArgumentException;
+use MilesChou\Toggle\Processor;
 
 class Bucket extends Processor
 {
