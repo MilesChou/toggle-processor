@@ -1,7 +1,7 @@
 {
     "name": "mileschou/toggle-processor",
     "license": "MIT",
-    "description": "The feature toggle library for PHP",
+    "description": "The processors implements for feature toggle library.",
     "keywords": [
         "feature",
         "toggle"
