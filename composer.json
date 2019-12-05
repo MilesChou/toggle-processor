@@ -18,9 +18,8 @@
         "mileschou/toggle-simplify": "^1.1"
     },
     "require-dev": {
-        "php-coveralls/php-coveralls": "^2.1",
-        "phpunit/phpunit": ">=4.8 <6",
-        "squizlabs/php_codesniffer": "^3.2"
+        "phpunit/phpunit": "^4 | ^5 | ^6",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
         "psr-4": {
@@ -33,9 +32,6 @@
         }
     },
     "config": {
-        "sort-packages": true,
-        "platform": {
-            "php": "5.5"
-        }
+        "sort-packages": true
     }
 }

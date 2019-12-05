@@ -3,8 +3,9 @@
 namespace Tests;
 
 use MilesChou\Toggle\Processors\Bucket;
+use PHPUnit\Framework\TestCase;
 
-class BucketTest extends \PHPUnit_Framework_TestCase
+class BucketTest extends TestCase
 {
     /**
      * @test
